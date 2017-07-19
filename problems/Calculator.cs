@@ -56,11 +56,11 @@ namespace problems
             
         }
 
-        public static void Main(string[] args)
-        {
-            Calculator c = new Calculator();
-            c.CallCalulator();
-            Console.ReadLine();
-        }
+        //public static void Main(string[] args)
+        //{
+        //    Calculator c = new Calculator();
+        //    c.CallCalulator();
+        //    Console.ReadLine();
+        //}
     }
 }
