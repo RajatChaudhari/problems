@@ -47,11 +47,11 @@ namespace problems
             }
         }
 
-        public static void Main(string[] args)
-        {
-            LaLiga la = new LaLiga();
-            la.CallLaLiga();
-            Console.ReadLine();
-        }
+        //public static void Main(string[] args)
+        //{
+        //    LaLiga la = new LaLiga();
+        //    la.CallLaLiga();
+        //    Console.ReadLine();
+        //}
     }
 }
