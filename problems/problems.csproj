@@ -48,9 +48,12 @@
     <Compile Include="CalculatorRough.cs" />
     <Compile Include="ChecfSignRough.cs" />
     <Compile Include="ChefSigns.cs" />
+    <Compile Include="IPCTrainers.cs" />
+    <Compile Include="LaLiga.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rupsa.cs" />
+    <Compile Include="TwoSum.cs" />
     <Compile Include="WhatsIntheName.cs" />
   </ItemGroup>
   <ItemGroup>
