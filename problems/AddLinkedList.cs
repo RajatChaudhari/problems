@@ -54,24 +54,13 @@ namespace problems
             return dummyHead.next;
         }
 
-        public static void Main(string[] args)
-        {
-            AddLinkedList call = new AddLinkedList();
-            for (int i = 0; i < 2; i++) { 
-            ListNode l1 = new ListNode(Convert.ToInt32(Console.ReadLine()));
-            ListNode l2 = new ListNode(Convert.ToInt32(Console.ReadLine()));
-            call.AddTwoNumbers(l1, l2);
-            }
-            ListNode l4 = new ListNode(0);
-           
-            Console.WriteLine(l4.val);
-            
-            int a=Convert.ToInt32( Console.ReadLine());
-            Console.WriteLine(a%10);
-            Console.WriteLine(a / 10);
-            Console.WriteLine(a);
-            Console.Read();
-        }
+        //public static void Main(string[] args)
+        //{
+        //    AddLinkedList call = new AddLinkedList();
+        //    ListNode l1 = new ListNode(Convert.ToInt32(Console.ReadLine()));
+        //    ListNode l2 = new ListNode(Convert.ToInt32(Console.ReadLine()));
+        //    call.AddTwoNumbers(l1, l2);
+        //}
     }
     public class ListNode
     {
