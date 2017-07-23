@@ -13,33 +13,42 @@ namespace problems
         {
             int cases = Convert.ToInt32(Console.ReadLine());
             List<string> signList = new List<string>();
+            int signCount = 0;
 
-            for (int ii = 0; ii < cases; ii++)
+            for (int i = 0; i < cases; i++)
             {
-                string sign = Console.ReadLine().Trim(' ');
-
-                int l = sign.Length;
-                int[] num = new int[l + 1];
-                num[0] = l + 1;
-                for (int i = 0; i < l; i++)
-                {
-                    if (sign.Substring(i, 1) == ">")
-                    {
-                        num[i + 1] = num[i] + 1;
-                    }
-                    else if (sign.Substring(i, 1) == "<")
-                    {
-                        num[i + 1] = num[i] - 1;
-                    }
-                    else if (sign.Substring(i, 1) == "=")
-                    {
-                        num[i + 1] = num[i];
-                    }
-                }
-                int P = num.Distinct().Count();
-                Console.WriteLine(P);
+                string sign = Console.ReadLine();
+                signCount = signCount + sign.Length;
+                signList.Add(sign);
             }
             
+            foreach (string s in signList)
+            {
+                string str=s.Replace("=",string.Empty);
+                string[] gt = str.Split('<');
+                string[] lt = str.Split('>');
+                int maxgt = 0;
+                int maxlt = 0;
+                for (int i = 0; i < gt.Length; i++)
+                {
+                    int a=gt[i].Length;
+                    if (a > maxgt)
+                    {
+                        maxgt = a;
+                    }
+                }
+                for (int i = 0; i < lt.Length; i++)
+                {
+                    int a = lt[i].Length;
+                    if (a > maxlt)
+                    {
+                        maxlt = a;
+                    }
+                }
+                int P = 0;
+                P = Math.Max(maxgt, maxlt) + 1;
+                Console.WriteLine(P);
+            }
         }
         //static void Main(string[] args)
         //{
