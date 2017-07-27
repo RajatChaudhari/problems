@@ -52,11 +52,11 @@ namespace problems
             }
             
         }
-        static void Main(string[] args)
-        {
-            Traverse tObj = new Traverse();
-            tObj.CallTraverse();
-            Console.Read();
-        }
+        //static void Main(string[] args)
+        //{
+        //    Traverse tObj = new Traverse();
+        //    tObj.CallTraverse();
+        //    Console.Read();
+        //}
     }
 }
