@@ -16,18 +16,27 @@ namespace problems
                 string[] input = Console.ReadLine().Split(' ');
                 string P = input[0];//.ToCharArray();
                 string Q = input[1];//.ToCharArray();
-                char curr='a';
-                string fromQ;
-                List<char> charlist = new List<char>();
-                for(int a=0;a<Q.Length;a++)
+                char[] Pc = P.ToCharArray();
+                char[] Qc = Q.ToCharArray();
+                char curr = 'a';
+                for (int a = 0; a < Q.Length;)
                 {
-                    fromQ = Q.Substring(a,1);
-                    if(!P.Contains(fromQ))
+                    curr = Q.Substring(a, 1).ToCharArray()[0];
+                    if (P.Substring(a, 1) != Q.Substring(a, 1))
                     {
-                        P.Replace(P.Substring(a, 1), fromQ);
+                        
+                        while (P.Contains(curr))
+                        {
+                            curr++;                            
+                        }
+                        P = P.Replace(P.Substring(a, 1).ToCharArray()[0], curr);
+                        
+                        a++;
+                        
+                        
+
                     }
                 }
-
             }
         }
 
@@ -35,6 +44,7 @@ namespace problems
         {
             Histosim call=new Histosim();
             call.CheckString();
+            Console.ReadLine();
         }
     }
 }
