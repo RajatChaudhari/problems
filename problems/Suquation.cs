@@ -17,6 +17,7 @@ namespace problems
                 int n = Convert.ToInt32(input[0]);
                 int m = Convert.ToInt32(input[1]);
                 int mul = 1;
+                int sum = 0;
                 for (int a = 2; a < n; a++)
                 {
                     mul = a%m;
@@ -24,6 +25,7 @@ namespace problems
                     {
                         mul *= mul%m;
                     }
+                    sum += mul;
                 }
             }
         }
