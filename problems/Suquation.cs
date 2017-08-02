@@ -29,10 +29,10 @@ namespace problems
                 }
             }
         }
-        static void Main(string[] args)
-        {
-            Console.WriteLine(1 % 2);
-            Console.ReadLine();
-        }
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine(1 % 2);
+        //    Console.ReadLine();
+        //}
     }
 }
