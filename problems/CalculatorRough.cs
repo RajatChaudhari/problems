@@ -20,7 +20,7 @@ namespace problems
             {
                 int cases = Convert.ToInt32(Console.ReadLine());
                 int[,] data = new int[cases, 2];
-
+                
                 for (int i = 0; i < cases; i++)
                 {
                     string[] input = Console.ReadLine().Split(' ');
@@ -30,6 +30,7 @@ namespace problems
                 for (int a = 0; a < cases; a++)
                 {
                     int power = data[a, 0];
+
                     int consumed = data[a, 1];
                     int unit = 0;
                     if (consumed > 1)

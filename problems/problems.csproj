@@ -49,6 +49,7 @@
     <Compile Include="Bossloss.cs" />
     <Compile Include="Calculator.cs" />
     <Compile Include="CalculatorRough.cs" />
+    <Compile Include="ChecfSignRough.cs" />
     <Compile Include="ChefMover.cs" />
     <Compile Include="ChefSigns.cs" />
     <Compile Include="GreedyC.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Suquation.cs" />
     <Compile Include="TravelAll.cs" />
     <Compile Include="Traverse.cs" />
+    <Compile Include="TwoSum.cs" />
     <Compile Include="WhatsIntheName.cs" />
   </ItemGroup>
   <ItemGroup>
