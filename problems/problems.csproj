@@ -52,8 +52,13 @@
     <Compile Include="CalculatorRough.cs" />
     <Compile Include="ChefMover.cs" />
     <Compile Include="ChefSigns.cs" />
+    <Compile Include="GreedyC.cs" />
     <Compile Include="GreedyCandidate.cs" />
     <Compile Include="Histosim.cs" />
+    <Compile Include="HR_gs_BankAccounts.cs" />
+    <Compile Include="HR_gs_BuyMaxStocks.cs" />
+    <Compile Include="HR_gs_TimeSeries.cs" />
+    <Compile Include="HR_gs_TraderProfit.cs" />
     <Compile Include="IPCTrainers.cs" />
     <Compile Include="LaLiga.cs" />
     <Compile Include="LostMax.cs" />
@@ -67,10 +72,13 @@
     <Compile Include="Suquation.cs" />
     <Compile Include="TravelAll.cs" />
     <Compile Include="Traverse.cs" />
+    <Compile Include="TwoSum.cs" />
     <Compile Include="WhatsIntheName.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
