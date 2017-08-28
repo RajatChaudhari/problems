@@ -10,10 +10,10 @@ namespace problems
     {
 
 
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
              
-        }
+        //}
         public void test2()
         {
 

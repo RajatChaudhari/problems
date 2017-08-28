@@ -57,6 +57,29 @@ namespace problems
 
             }
 
+            public int ExpoSearch(int[] arr, int n, int x)
+            {
+                int lo=0, hi=9;
+
+                int a = lo + (
+                                (  (hi - lo) /(arr[hi] - arr[lo])  ) * (x - arr[lo])
+                             );
+
+                if (arr[0] == x)
+                    return 0;
+
+                int i = 1;
+                while(i<n&&arr[i]<x)
+                {
+                    i *= 2;
+                }
+
+                return 0;// arr, i/2, Math.Min(1,n),x to binary search
+
+            }
+
+
+
             //public static void Main(string[] args)
             //{
             //    CalculatorRough c = new CalculatorRough();
