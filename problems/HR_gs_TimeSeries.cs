@@ -8,7 +8,7 @@ namespace problems
 {
     class HR_gs_TimeSeries
     {
-        static void Main(String[] args)
+        static void MainT(String[] args)
         {
             string[] tokens_n = Console.ReadLine().Split(' ');
             int n = Convert.ToInt32(tokens_n[0]);
