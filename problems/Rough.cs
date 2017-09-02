@@ -122,7 +122,7 @@ namespace problems
 
             List<int> relist = new List<int>();
             int remainder = 0;
-            int i = 0;
+            //int i = 0;
             while (n > 0)
             {
                 remainder = n % 2;

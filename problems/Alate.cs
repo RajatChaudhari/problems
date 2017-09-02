@@ -8,15 +8,15 @@ namespace problems
 {
     class Alate
     {
-        public static void Main(string[] args)
-        {
-            int cases = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < cases; i++)
-            {
-                SMethod();
-            }
-            //Console.ReadLine();
-        }
+        //public static void Main(string[] args)
+        //{
+        //    int cases = Convert.ToInt32(Console.ReadLine());
+        //    for (int i = 0; i < cases; i++)
+        //    {
+        //        SMethod();
+        //    }
+        //    //Console.ReadLine();
+        //}
 
         public static void SMethod()
         {
