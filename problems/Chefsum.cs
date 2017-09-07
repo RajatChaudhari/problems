@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,22 +16,19 @@ namespace problems
             {
                 int n = Convert.ToInt32(Console.ReadLine());
                 int[] nums = Array.ConvertAll(Console.ReadLine().Trim(' ').Split(' '), int.Parse);
-                Dictionary<int, int> sums = new Dictionary<int, int>();
-
-
+                long[] sums = new long[n];
+                int ans = 0;
+                for (int j = 0; j < n; j++)
+                {
+                    int[] pre = new int[n];
+                    int[] suf = new int[n];
+                    Array.Copy(nums, 0, pre, 0,j+1);
+                    Array.Copy(nums, j, suf, 0, n - j);
+                    sums[j] = pre.Sum() + suf.Sum();
+                }   
+                ans = Array.IndexOf(sums,sums.Min());
+                Console.WriteLine(ans+1);
             }
-
-
-        }
-
-        public static long prefixSum(int n)
-        {
-            return 0;
-        }
-
-        public static long suffixSum(int n)
-        {
-            return 0;
         }
     }
 }
