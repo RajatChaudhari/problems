@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbhiKMax.cs" />
     <Compile Include="Alate.cs" />
     <Compile Include="BatCave.cs" />
     <Compile Include="Bears.cs" />
